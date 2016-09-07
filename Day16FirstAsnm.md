@@ -108,5 +108,23 @@ TWEEN '2016-01-01' AND '2016-06-30' order by start_date DESC;
 | Frank      | Fountain  | 2016-01-31 |
 +------------+-----------+------------+
 6 rows in set (0.00 sec)
+mysql> select class_id from studentToClass where studentid = 150;
++----------+
+| class_id |
++----------+
+|        1 |
+|        2 |
++----------+
+2 rows in set (0.14 sec)
 
-mysql>
+mysql> select classid from classToMajor where majorid = 4;
++---------+
+| classid |
++---------+
+|       4 |
+|       1 |
+|       2 |
++---------+
+3 rows in set (0.00 sec)
+
+Therefore, the student 150 needs to take class 4 from the major series to complete major 4.
